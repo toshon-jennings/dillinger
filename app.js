@@ -136,7 +136,13 @@ app.use(medium)
 app.use(googledrive)
 app.use(onedrive)
 
-app.listen(app.get('port'), function () {
-  console.log('Express server listening on port ' + app.get('port'))
-  console.log('\nhttp://' + app.get('bind-address') + ':' + app.get('port') + '\n')
-})
+// Export app for Vercel serverless functions
+module.exports = app
+
+// Only listen if not in serverless environment (Vercel)
+if (!process.env.VERCEL) {
+  app.listen(app.get('port'), function () {
+    console.log('Express server listening on port ' + app.get('port'))
+    console.log('\nhttp://' + app.get('bind-address') + ':' + app.get('port') + '\n')
+  })
+}
