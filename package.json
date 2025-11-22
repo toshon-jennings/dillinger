@@ -24,10 +24,7 @@
     "postversion": "bin/build.js",
     "build": "NODE_OPTIONS=--openssl-legacy-provider gulp build --prod",
     "deploy": "ssh azure",
-    "preinstall": "npm install --package-lock-only --ignore-scripts && npx npm-force-resolutions"
-  },
-  "resolutions": {
-    "graceful-fs": "^4.2.11"
+    "preinstall": "npm install --package-lock-only --ignore-scripts"
   },
   "keywords": [
     "dillinger",
