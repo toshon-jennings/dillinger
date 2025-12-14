@@ -16,7 +16,7 @@ AngularJS-powered HTML5 Markdown editor.
 
 #### Note from Toshon@StudioOS
 
-Since I don’t know what’s happening at Dillinger.io, I’ve spun this site up for StudioOS users.
+Since I don’t know what’s happening at the original Dillinger.io at any given time, I’ve spun this site up for StudioOS users.
 This is the exact latest version forked from Joe McCann’s repo mid-late November 2025.
 Feel free to share this site with anyone who wants access to Dillinger if they don’t already have an alternative.
 
